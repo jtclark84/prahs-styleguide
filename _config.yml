@@ -1,0 +1,6 @@
+name: PRAHS 2.5 UI Styles
+markdown: redcarpet
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+baseurl: /prahs
