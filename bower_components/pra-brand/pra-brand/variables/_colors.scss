@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #VARIABLES/COLORS
+\*------------------------------------*/
+
+/**
+ *  Colors
+ */
+ $color-pink:         #EA1B75 !default;
+ $color-green:         #6CC24A !default;
+ $color-orange:            #FF6900 !default;
+ $color-purple:         #C800A1 !default;
+ $color-yellow:          #CEDC00 !default;
+ $color-blue:          #00A9CE !default;
+ $color-black:          #1A1818 !default;
+ $color-lightgrey:          #F1F0F0 !default;
+ $color-lighttext:       #979797 !default;
+
+
+
+
+/**
+ * Grayscale
+ */
+$colorGrayscale-background: #f7f7f7;
+$colorGrayscale-text:       #3a3a3a;
+$colorGrayscale-black:      #000;
+
+
+/**
+ * Framework
+ */
+$color-primary:   $color-pink;
+$color-secondary: $color-lightgrey;
+
+$brand-primary:   $color-primary;

@@ -1,0 +1,27 @@
+{
+  "name": "pra-brand",
+  "homepage": "https://github.com/jtclark84/pra-brand",
+  "authors": [
+    "jtclark84 <jtclark84@gmail.com>"
+  ],
+  "description": "",
+  "main": "_pra-brand.scss",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "a432016eb1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a432016eb1e682030c58482c4248bc34f2ee89df"
+  },
+  "_source": "https://github.com/jtclark84/pra-brand.git",
+  "_target": "*",
+  "_originalSource": "pra-brand",
+  "_direct": true
+}

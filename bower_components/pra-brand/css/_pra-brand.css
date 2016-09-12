@@ -1,0 +1,1221 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    #VARIABLES/COLORS
+\*------------------------------------*/
+/**
+ *  Colors
+ */
+/**
+ * Grayscale
+ */
+/**
+ * Framework
+ */
+/**
+ * Helpers
+ */
+/*------------------------------------*\
+    #VARIABLES/COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+    #VARIABLES/TYPE
+\*------------------------------------*/
+/**
+ * Base Type Settings
+ */
+/**
+ * Headings
+ */
+/*------------------------------------*\
+ #MIXINS/TYPE
+\*------------------------------------*/
+/*------------------------------------*\
+    #MIXINS/CENTER-BLOCK
+\*------------------------------------*/
+/**
+ * Center-align a block level element
+ */
+/*------------------------------------*\
+    $=#MIXINS/CLEARFIX
+\*------------------------------------*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * 
+ *  Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+/**
+ * The newest clearfix: Unsure about support
+ */
+/*------------------------------------*\
+    #MIXINS/MEDIA-QUERY
+\*------------------------------------*/
+/**
+ * Media query for easy breakpoint. Use pixel width with or without units
+ * and it will convert to em 
+ */
+/**
+ * Set $query1: max for a max-qidth query, defaults to min-width
+ */
+/*------------------------------------*\
+    #MIXINS/SIZING
+\*------------------------------------*/
+/**
+ * Can handle shorthand calculations
+ * Do not change the variable set
+ * http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+ */
+/**
+ * Space elements by an amount based on your magic number. Pass in the property
+ * to be indented as a paramater, e.g.:
+ *
+ * pre {
+ *    @include spacing(padding-left);
+ * }
+ */
+/*------------------------------------*\
+ #MIXINS/TYPE
+\*------------------------------------*/
+/**
+ * Quickly generate a font-size in rems, with a pixel fallback, based on the
+ * value we pass into the mixin, e.g.:
+ *
+ * h1 {
+ *     $include font-size(24px);
+ * }
+ */
+/**
+ * Style any number of headings in one fell swoop, e.g.:
+ *
+   .foo{
+       @include headings(1, 3){
+           color:#c0ffee;
+       }
+    }
+ *
+ * With thanks to @lar_zzz, @paranoida, @rowanmanning and ultimately
+ * @thierrylemoulec for refining and improving my initial mixin.
+ */
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+/**
+ * Margin and padding helper classes.
+ *
+ * `.(m|p)(t|r|b|L|e|s)(-|+|0) {}` = margin/padding top/right/bottom/left/ends/sides less/more/none
+ */
+/**
+ * Add margins.
+ */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+.m {
+  margin: 16px !important; }
+
+.mt {
+  margin-top: 16px !important; }
+
+.mr {
+  margin-right: 16px !important; }
+
+.mb {
+  margin-bottom: 16px !important; }
+
+.ml {
+  margin-left: 16px !important; }
+
+.me {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important; }
+
+.ms {
+  margin-right: 16px !important;
+  margin-left: 16px !important; }
+
+/**
+ * Tiny margins.
+ */
+.m-- {
+  margin: 4px !important; }
+
+.mt-- {
+  margin-top: 4px !important; }
+
+.mr-- {
+  margin-right: 4px !important; }
+
+.mb-- {
+  margin-bottom: 4px !important; }
+
+.ml-- {
+  margin-left: 4px !important; }
+
+.ms-- {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important; }
+
+.me-- {
+  margin-right: 4px !important;
+  margin-left: 4px !important; }
+
+/**
+* Small margins.
+*/
+.m- {
+  margin: 8px !important; }
+
+.mt- {
+  margin-top: 8px !important; }
+
+.mr- {
+  margin-right: 8px !important; }
+
+.mb- {
+  margin-bottom: 8px !important; }
+
+.ml- {
+  margin-left: 8px !important; }
+
+.me- {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important; }
+
+.ms- {
+  margin-right: 8px !important;
+  margin-left: 8px !important; }
+
+/**
+ * Large Margins.
+ */
+.m_x {
+  margin: 32px !important; }
+
+.mt_x {
+  margin-top: 32px !important; }
+
+.mr_x {
+  margin-right: 32px !important; }
+
+.mb_x {
+  margin-bottom: 32px !important; }
+
+.ml_x {
+  margin-left: 32px !important; }
+
+.me_x {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important; }
+
+.ms_x {
+  margin-right: 32px !important;
+  margin-left: 32px !important; }
+
+/**
+ * Huge Margins.
+ */
+.m_xx {
+  margin: 64px !important; }
+
+.mt_xx {
+  margin-top: 64px !important; }
+
+.mr_xx {
+  margin-right: 64px !important; }
+
+.mb_xx {
+  margin-bottom: 64px !important; }
+
+.ml_xx {
+  margin-left: 64px !important; }
+
+.ms_xx {
+  margin-top: 64px !important;
+  margin-bottom: 64px !important; }
+
+.me_xx {
+  margin-right: 64px !important;
+  margin-left: 64px !important; }
+
+/**
+ * Remove margins.
+ */
+.m0 {
+  margin: 0 !important; }
+
+.mt0 {
+  margin-top: 0 !important; }
+
+.mr0 {
+  margin-right: 0 !important; }
+
+.mb0 {
+  margin-bottom: 0 !important; }
+
+.ml0 {
+  margin-left: 0 !important; }
+
+.me0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+.ms0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+/**
+ * Add paddings.
+ */
+.p {
+  padding: 16px !important; }
+
+.pt {
+  padding-top: 16px !important; }
+
+.pr {
+  padding-right: 16px !important; }
+
+.pb {
+  padding-bottom: 16px !important; }
+
+.pl {
+  padding-left: 16px !important; }
+
+.pe {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important; }
+
+.ps {
+  padding-right: 16px !important;
+  padding-left: 16px !important; }
+
+	/**
+     * Tiny paddings.
+     */
+.p-- {
+  padding: 4px !important; }
+
+.pt-- {
+  padding-top: 4px !important; }
+
+.pr-- {
+  padding-right: 4px !important; }
+
+.pb-- {
+  padding-bottom: 4px !important; }
+
+.pl-- {
+  padding-left: 4px !important; }
+
+.pe-- {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important; }
+
+.ps-- {
+  padding-right: 4px !important;
+  padding-left: 4px !important; }
+
+/**
+ * Small paddings.
+ */
+.p- {
+  padding: 8px !important; }
+
+.pt- {
+  padding-top: 8px !important; }
+
+.pr- {
+  padding-right: 8px !important; }
+
+.pb- {
+  padding-bottom: 8px !important; }
+
+.pl- {
+  padding-left: 8px !important; }
+
+.pe- {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important; }
+
+.ps- {
+  padding-right: 8px !important;
+  padding-left: 8px !important; }
+
+/**
+ * Large paddings.
+ */
+.p_x {
+  padding: 32px !important; }
+
+.pt_x {
+  padding-top: 32px !important; }
+
+.pr_x {
+  padding-right: 32px !important; }
+
+.pb_x {
+  padding-bottom: 32px !important; }
+
+.pl_x {
+  padding-left: 32px !important; }
+
+.pe_x {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important; }
+
+.ps_x {
+  padding-right: 32px !important;
+  padding-left: 32px !important; }
+
+/**
+ * Huge paddings.
+ */
+.p_xx {
+  padding: 64px !important; }
+
+.pt_xx {
+  padding-top: 64px !important; }
+
+.pr_xx {
+  padding-right: 64px !important; }
+
+.pb_xx {
+  padding-bottom: 64px !important; }
+
+.pl_xx {
+  padding-left: 64px !important; }
+
+.pe_xx {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important; }
+
+.ps_xx {
+  padding-right: 64px !important;
+  padding-left: 64px !important; }
+
+/**
+ * Remove paddings.
+ */
+.p0 {
+  padding: 0 !important; }
+
+.pt0 {
+  padding-top: 0 !important; }
+
+.pr0 {
+  padding-right: 0 !important; }
+
+.pb0 {
+  padding-bottom: 0 !important; }
+
+.pl0 {
+  padding-left: 0 !important; }
+
+.pe0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.ps0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+/*------------------------------------*\
+ #TOOLS
+\*------------------------------------*/
+/**
+ * We will begin by importing functions that will be used in the
+ * framework. There is no need to change any of these functions
+ */
+/**
+ * This allows us to use the rem-calc mixin for shorthand 
+ * conversions.
+ */
+/**
+ * Use this em function instead of the other
+ */
+/*------------------------------------*\
+    $UTILITIES
+\*------------------------------------*/
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesn’t already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ */
+/*------------------------------------*\
+    #ALIGN UTILITIES
+\*------------------------------------*/
+/**
+ * Text alignment
+ */
+.u-textLeft {
+  text-align: left !important; }
+
+.u-textCenter,
+.u-centerBlock {
+  text-align: center !important; }
+
+.u-textRight {
+  text-align: right !important; }
+
+/**
+ * Vertical alignment utilities
+ * Depends on an appropriate `display` value.
+ */
+.u-alignBaseline {
+  vertical-align: baseline !important; }
+
+.u-alignBottom {
+  vertical-align: bottom !important; }
+
+.u-alignMiddle {
+  vertical-align: middle !important; }
+
+.u-alignTop {
+  vertical-align: top !important; }
+
+/*------------------------------------*\
+    #DISPLAY UTILITIES
+\*------------------------------------*/
+.u-block {
+  display: block !important; }
+
+.u-hidden {
+  display: none !important; }
+
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+.u-hiddenVisually {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; }
+
+.u-inline {
+  display: inline !important; }
+
+/**
+ * 1. Fix for Firefox bug: an image styled `max-width:100%` within an
+ * inline-block will display at its default size, and not limit its width to
+ * 100% of an ancestral container.
+ */
+.u-inlineBlock {
+  display: inline-block !important;
+  max-width: 100%;
+  /* 1 */ }
+
+.u-table {
+  display: table !important; }
+
+.u-tableCell {
+  display: table-cell !important; }
+
+.u-tableRow {
+  display: table-row !important; }
+
+/*------------------------------------*\
+    #LAYOUT UTILITIES
+\*------------------------------------*/
+/**
+ * Contain floats
+ *
+ * Make an element expand to contain floated children.
+ * Uses pseudo-elements (micro clearfix).
+ *
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of the
+ *    element.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.u-cf:before,
+.u-cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.u-cf:after {
+  clear: both; }
+
+/**
+ * New block formatting context
+ *
+ * This affords some useful properties to the element. It won't wrap under
+ * floats. Will also contain any floated children.
+ * N.B. This will clip overflow. Use the alternative method below if this is
+ * problematic.
+ */
+.u-nbfc {
+  overflow: hidden !important; }
+
+/**
+ * New block formatting context (alternative)
+ *
+ * Alternative method when overflow must not be clipped.
+ *
+ * 1. Create a new block formatting context (NBFC).
+ * 2. Avoid shrink-wrap behaviour of table-cell.
+ *
+ * N.B. This breaks down in some browsers when elements within this element
+ * exceed its width.
+ */
+.u-nbfcAlt {
+  display: table-cell !important;
+  /* 1 */
+  width: 10000px !important;
+  /* 2 */ }
+
+/**
+ * Floats
+ */
+.u-floatLeft {
+  float: left !important; }
+
+.u-floatRight {
+  float: right !important; }
+
+.u-floatNone {
+  float: none !important; }
+
+/**
+ * Sizes
+ */
+.u-fullHeight {
+  height: 100% !important; }
+
+.u-fullWidth,
+.u-centerBlock {
+  width: 100% !important; }
+
+/**
+ * Content Alignment
+ */
+.u-center,
+.u-centered,
+.u-centerBlock {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+/*------------------------------------*\
+    #LINK UTILITIES
+\*------------------------------------*/
+/**
+ * Clean link
+ *
+ * A link without any text-decoration at all.
+ */
+.u-linkClean, .u-linkClean:hover, .u-linkClean:focus, .u-linkClean:active {
+  text-decoration: none !important; }
+
+/**
+ * Block-level link
+ *
+ * Combination of traits commonly used in vertical navigation lists.
+ */
+.u-linkBlock, .u-linkBlock:hover, .u-linkBlock:focus, .u-linkBlock:active {
+  display: block !important;
+  text-decoration: none !important; }
+
+/*------------------------------------*\
+    #POSITION UTILITIES
+\*------------------------------------*/
+.u-posAbsolute {
+  position: absolute !important; }
+
+.u-posRelative {
+  position: relative !important; }
+
+.u-posStatic {
+  position: static !important; }
+
+/**
+ * 1. Make sure fixed elements are promoted into a new layer, for performance
+ *    reasons.
+ */
+.u-posFixed {
+  position: fixed !important;
+  backface-visibility: hidden;
+  /* 1 */ }
+
+/**
+ * Pins to all corners by default. But when a width and/or height are
+ * provided, the element will be centered in its nearest relatively-positioned
+ * ancestor.
+ */
+.u-posAbsoluteCenter {
+  bottom: 0 !important;
+  left: 0 !important;
+  margin: auto !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important; }
+
+/*------------------------------------*\
+    #TEXT UTILITIES
+\*------------------------------------*/
+/**
+ * Horizontal text alignment
+ */
+.u-textCenter,
+.u-centerBlock {
+  text-align: center !important; }
+
+.u-textLeft {
+  text-align: left !important; }
+
+.u-textRight {
+  text-align: right !important; }
+
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+.u-textBreak {
+  word-wrap: break-word !important; }
+
+/**
+ * Inherit the ancestor's text color.
+ */
+.u-textInheritColor {
+  color: inherit !important; }
+
+/**
+ * Enables font kerning in all browsers.
+ * http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+ *
+ * 1. Chrome (not Windows), Firefox, Safari 6+, iOS, Android
+ * 2. Chrome (not Windows), Firefox, IE 10+
+ * 3. Safari 7 and future browsers
+ */
+.u-textKern {
+  text-rendering: optimizeLegibility;
+  /* 1 */
+  font-feature-settings: "kern" 1;
+  /* 2 */
+  font-kerning: normal;
+  /* 3 */ }
+
+/**
+ * Prevent whitespace wrapping
+ */
+.u-textNoWrap {
+  white-space: nowrap !important; }
+
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+.u-textTruncate {
+  max-width: 100%;
+  /* 1 */
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+  /* 2 */ }
+
+/**
+ * Text Sizing
+ */
+.u-textSize-small {
+  font-size: 16px !important; }
+
+/**
+ * Font weights
+ */
+.u-textWeight-light {
+  font-weight: 300 !important; }
+
+.u-textWeight-normal {
+  font-weight: 400 !important; }
+
+.u-textWeight-medium {
+  font-weight: 500 !important; }
+
+.u-textWeight-bold {
+  font-weight: 700 !important; }
+
+/**
+ * Apply capital case to an element (usually a `strong`).
+ */
+.u-textCaps {
+  text-transform: uppercase !important; }
+
+/**
+ * Add a help cursor to any element that gives the user extra information on
+ * `:hover`.
+ */
+.informative {
+  cursor: help !important; }
+
+/**
+ * Add a right-angled quote to links that imply movement, e.g.:
+ *
+   <a href=# class=go>Read more</a>
+ *
+ */
+.go:after {
+  content: "\00A0" "\00BB"  !important; }
+
+/**
+ * Apply capital case to an element (usually a `strong`).
+ */
+.caps {
+  text-transform: uppercase !important; }
+
+h1, h2, h3 {
+  font-family: "Klinic-Regular", "Times New Roman", Times, serif; }
+
+h2.avenir-bold {
+  font-family: "AvenirNext-Bold", Calibri, Candara, Arial, sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #979797; }
+
+h1.avenir, h2.avenir, h3.avenir, h4.avenir, h4.avenir {
+  letter-spacing: 3px; }
+
+.btn {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 8px 30px 8px 30px;
+  font-family: "AvenirNext-Bold", Calibri, Candara, Arial, sans-serif; }
+
+.breadcrumb {
+  font-family: "AvenirNext-Regular", Calibri, Candara, Arial, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.navbar-default {
+  border-top: #EA1B75 solid 2px; }
+
+.bigQuote {
+  font-size: 44px;
+  font-family: avenir;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+  text-align: center; }
+
+.quotemark {
+  content: url(http://develop.epr-bl.prahscl.com/assets/images/quote.png);
+  width: 72px;
+  margin: 36px auto 72px auto;
+  display: block; }
+
+.hr-quote {
+  margin: 72px auto;
+  width: 144px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  margin: 18px auto 72px; }
+
+.thick {
+  border-width: 6px; }
+
+.border-white {
+  border-color: white; }
+
+.label.pageTitle {
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "AvenirNext-Bold", Calibri, Candara, Arial, sans-serif;
+  letter-spacing: 2px; }
+
+.label-alt {
+  background-color: #ffffff;
+  color: #000000; }
+
+h6 {
+  line-height: 2.15; }
+
+h1 {
+  font-family: 'Klinic-medium'; }
+
+.avenir {
+  font-family: "AvenirNext-Regular", Calibri, Candara, Arial, sans-serif; }
+
+.klinic {
+  font-family: "Klinic-Regular", "Times New Roman", Times, serif; }
+
+.poly {
+  fill: #ace63c;
+  background: url(../assets/pattern.svg) no-repeat 100%;
+  background-blend-mode: hard-light;
+  color: #ffffff;
+  padding: 80px; }
+
+.fancy-border {
+  width: 100%;
+  padding: 48px;
+  position: absolute;
+  z-index: 1; }
+
+.fancy-border .line {
+  border: 2px solid #232323;
+  height: 100%; }
+
+.dark {
+  background-color: #232323; }
+
+.pink {
+  background-color: #EA1B75; }
+
+.orange {
+  background-color: #FF6900; }
+
+.yellow {
+  background-color: #CEDC00; }
+
+.green {
+  background-color: #6CC24A; }
+
+.blue {
+  background-color: #00A9CE; }
+
+.purple {
+  background-color: #C800A1; }
+
+.color-black {
+  background-color: #1A1818;
+  color: #F1F0F0; }
+
+.color-lighttext {
+  background-color: #979797; }
+
+.color-lightgrey {
+  background-color: #F1F0F0; }
+
+.bb {
+  border-bottom: 2px solid #979797;
+  padding-bottom: 18px; }
+
+.bt {
+  border-top: 2px solid #979797;
+  padding-top: 18px; }
+
+.bl {
+  border-left: 2px solid #979797;
+  padding-left: 10px; }
+
+.br {
+  border-right: 2px solid #979797;
+  padding-right: 10px; }
+
+.r0 {
+  border-radius: 0px !important; }
+
+.klinic {
+  font-family: "Klinic-regular", "Times New Roman", Times, serif; }
+  .klinic.light {
+    font-family: "Klinic-light", "Times New Roman", Times, serif; }
+  .klinic.medium {
+    font-family: "Klinic-medium", "Times New Roman", Times, serif; }
+  .klinic.bold {
+    font-family: "Klinic-bold", "Times New Roman", Times, serif; }
+
+.avenir {
+  font-family: "AvenirNext-Regular", Calibri, Candara, Arial, sans-serif; }
+  .avenir.bold {
+    font-family: "AvenirNext-Bold", Calibri, Candara, Arial, sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Klinic-Regular", "Times New Roman", Times, serif; }
+
+h2.avenir-bold {
+  font-family: "AvenirNext-Bold", Calibri, Candara, Arial, sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #979797; }
+
+h1.avenir, h2.avenir, h3.avenir, h4.avenir, h4.avenir {
+  letter-spacing: 3px; }
+
+h6 {
+  line-height: 2.15; }
+
+h1 {
+  font-family: 'Klinic-medium'; }
+
+.klinic {
+  font-family: "Klinic-regular", "Times New Roman", Times, serif; }
+  .klinic.light {
+    font-family: "Klinic-light", "Times New Roman", Times, serif; }
+  .klinic.medium {
+    font-family: "Klinic-medium", "Times New Roman", Times, serif; }
+  .klinic.bold {
+    font-family: "Klinic-bold", "Times New Roman", Times, serif; }
+
+.avenir {
+  font-family: "AvenirNext-Regular", Calibri, Candara, Arial, sans-serif; }
+  .avenir.bold {
+    font-family: "AvenirNext-Bold", Calibri, Candara, Arial, sans-serif; }
+
+.poly {
+  fill: #ace63c;
+  background: url(../assets/pattern.svg) no-repeat 100%;
+  background-blend-mode: hard-light;
+  color: #ffffff;
+  padding: 80px; }
+
+.dark {
+  background-color: #232323; }
+
+.pink {
+  background-color: #EA1B75; }
+
+.orange {
+  background-color: #FF6900; }
+
+.yellow {
+  background-color: #CEDC00; }
+
+.green {
+  background-color: #6CC24A; }
+
+.blue {
+  background-color: #00A9CE; }
+
+.purple {
+  background-color: #C800A1; }
+
+.color-black {
+  background-color: #1A1818;
+  color: #F1F0F0; }
+
+.color-lighttext {
+  background-color: #979797; }
+
+.color-lightgrey {
+  background-color: #F1F0F0; }
+
+@font-face {
+  font-family: 'Klinic-bold';
+  src: url("../assets/fonts/klinicslabbold-webfont.woff");
+  /* IE9 Compat Modes */
+  src: url("../assets/fonts/klinicslabbold-webfont.woff") format("embedded-opentype"), url("../assets/fonts/klinicslabbold-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'Klinic-medium';
+  src: url("../assets/fonts/klinicslabmedium-webfont.woff");
+  /* IE9 Compat Modes */
+  src: url("../assets/fonts/klinicslabmedium-webfont.woff") format("embedded-opentype"), url("../assets/fonts/klinicslabmedium-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'Klinic-regular';
+  src: url("../assets/fonts/klinicslabbook-webfont.woff");
+  /* IE9 Compat Modes */
+  src: url("../assets/fonts/klinicslabbook-webfont.woff") format("embedded-opentype"), url("../assets/fonts/klinicslabbook-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'Klinic-light';
+  src: url("../assets/fonts/klinicslablight-webfont.woff");
+  /* IE9 Compat Modes */
+  src: url("../assets/fonts/klinicslablight-webfont.woff") format("embedded-opentype"), url("../assets/fonts/klinicslablight-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src: url("../assets/fonts/AvenirNext-Bold.woff");
+  /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirNext-Bold.woff") format("embedded-opentype"), url("../assets/fonts/AvenirNext-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url("../assets/fonts/AvenirNext-Regular.woff");
+  /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirNext-Regular.woff") format("embedded-opentype"), url("../assets/fonts/AvenirNext-Regular.woff") format("woff"); }
+.navbar-inverse .badge {
+  background-color: #fff;
+  color: #EA1B75; }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+.text-primary,
+.text-primary:hover {
+  color: #EA1B75; }
+
+.text-success,
+.text-success:hover {
+  color: #6CC24A; }
+
+.text-danger,
+.text-danger:hover {
+  color: #C800A1; }
+
+.text-warning,
+.text-warning:hover {
+  color: #FF6900; }
+
+.text-info,
+.text-info:hover {
+  color: #00A9CE; }
+
+table a:not(.btn),
+.table a:not(.btn) {
+  text-decoration: underline; }
+table .dropdown-menu a,
+.table .dropdown-menu a {
+  text-decoration: none; }
+table .success,
+table .warning,
+table .danger,
+table .info,
+.table .success,
+.table .warning,
+.table .danger,
+.table .info {
+  color: #fff; }
+  table .success a,
+  table .warning a,
+  table .danger a,
+  table .info a,
+  .table .success a,
+  .table .warning a,
+  .table .danger a,
+  .table .info a {
+    color: #fff; }
+
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label,
+.has-warning .form-control-feedback {
+  color: #FF6900; }
+.has-warning .form-control,
+.has-warning .form-control:focus,
+.has-warning .input-group-addon {
+  border: 1px solid #FF6900; }
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label,
+.has-error .form-control-feedback {
+  color: #C800A1; }
+.has-error .form-control,
+.has-error .form-control:focus,
+.has-error .input-group-addon {
+  border: 1px solid #C800A1; }
+
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label,
+.has-success .form-control-feedback {
+  color: #6CC24A; }
+.has-success .form-control,
+.has-success .form-control:focus,
+.has-success .input-group-addon {
+  border: 1px solid #6CC24A; }
+
+.nav-pills > li > a {
+  border-radius: 0; }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-image: none; }
+
+.close {
+  text-decoration: none;
+  text-shadow: none;
+  opacity: 0.4; }
+  .close:hover, .close:focus {
+    opacity: 1; }
+
+.alert {
+  border: none; }
+  .alert .alert-link {
+    text-decoration: underline;
+    color: #fff; }
+
+.label {
+  border-radius: 0; }
+
+.progress {
+  height: 8px; }
+  .progress .progress-bar {
+    font-size: 8px;
+    line-height: 8px; }
+
+.panel-heading, .panel-footer {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+.panel-default .close {
+  color: #333333; }
+
+a.list-group-item-success.active {
+  background-color: #6CC24A; }
+a.list-group-item-success.active:hover, a.list-group-item-success.active:focus {
+  background-color: #5fb53d; }
+a.list-group-item-warning.active {
+  background-color: #FF6900; }
+a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus {
+  background-color: #e65f00; }
+a.list-group-item-danger.active {
+  background-color: #C800A1; }
+a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
+  background-color: #af008c; }
+
+.modal .close {
+  color: #333333; }
+
+.popover {
+  color: #333333; }
+
+.fancy-border {
+  width: 100%;
+  padding: 48px;
+  position: absolute;
+  z-index: 1; }
+
+.fancy-border .line {
+  border: 2px solid #232323;
+  height: 100%; }
+
+.bb {
+  border-bottom: 2px solid #979797;
+  padding-bottom: 18px; }
+
+.bt {
+  border-top: 2px solid #979797;
+  padding-top: 18px; }
+
+.bl {
+  border-left: 2px solid #979797;
+  padding-left: 10px; }
+
+.br {
+  border-right: 2px solid #979797;
+  padding-right: 10px; }
+
+.r0 {
+  border-radius: 0px !important; }

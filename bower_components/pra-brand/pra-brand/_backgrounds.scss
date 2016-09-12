@@ -1,0 +1,49 @@
+
+
+
+
+// Section Backgrounds
+
+.poly{
+  fill: #ace63c;
+  background: url(../assets/pattern.svg) no-repeat 100%;
+  background-blend-mode: hard-light;
+  // background-color: #EA1B75;
+  color: #ffffff;
+  padding: 80px;
+}
+
+
+// Colors
+.dark{
+  background-color: #232323;
+}
+
+.pink{
+background-color: $color-pink;
+}
+.orange{
+background-color: $color-orange;
+}
+.yellow{
+background-color: $color-yellow;
+}
+.green{
+background-color: $color-green;
+}
+.blue{
+background-color: $color-blue;
+}
+.purple{
+background-color: $color-purple;
+}
+.color-black{
+background-color: $color-black;
+color: $color-lightgrey;
+}
+.color-lighttext{
+background-color: $color-lighttext;
+}
+.color-lightgrey{
+background-color: $color-lightgrey;
+}

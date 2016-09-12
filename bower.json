@@ -1,0 +1,26 @@
+{
+  "name": "browser-sync-jekyll",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "jtclark84 <jtclark84@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "homepage": "https://github.com/jtclark84/prahs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pra-brand": "*"
+  }
+}

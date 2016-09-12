@@ -1,0 +1,31 @@
+.fancy-border {
+    width: 100%;
+    padding: 48px;
+    position: absolute;
+    z-index: 1;
+}
+
+.fancy-border .line {
+    border: 2px solid #232323;
+    height: 100%;
+}
+
+.bb{
+  border-bottom: 2px solid #979797;
+  padding-bottom: $padding-base-horizontal;
+}
+.bt{
+  border-top: 2px solid #979797;
+  padding-top: $padding-base-horizontal;
+}
+.bl{
+  border-left: 2px solid #979797;
+  padding-left: $padding-base-vertical;
+}
+.br{
+  border-right: 2px solid #979797;
+  padding-right: $padding-base-vertical;
+}
+.r0{
+  border-radius: 0px !important;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "pra-brand",
+  "homepage": "https://github.com/jtclark84/pra-brand",
+  "authors": [
+    "jtclark84 <jtclark84@gmail.com>"
+  ],
+  "description": "",
+  "main": "_pra-brand.scss",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,200 @@
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+
+/**
+ * Margin and padding helper classes.
+ *
+ * `.(m|p)(t|r|b|L|e|s)(-|+|0) {}` = margin/padding top/right/bottom/left/ends/sides less/more/none
+ */
+
+// scss-lint:disable SingleLinePerProperty SingleLinePerSelector SpaceBeforeBrace
+
+@if ($enable-margins == true) {
+
+    /**
+     * Add margins.
+     */
+    .m,  %m   { margin:        $base-margin !important; }
+    .mt, %mt  { margin-top:    $base-margin !important; }
+    .mr, %mr  { margin-right:  $base-margin !important; }
+    .mb, %mb  { margin-bottom: $base-margin !important; }
+    .ml, %ml  { margin-left:   $base-margin !important; }
+    .me, %me  { margin-top:    $base-margin !important; margin-bottom: $base-margin !important; }
+    .ms, %ms  { margin-right:  $base-margin !important; margin-left:   $base-margin !important; }
+
+}
+
+
+@if ($enable-margins--tiny == true) {
+
+    /**
+     * Tiny margins.
+     */
+    .m--,  %m--   { margin:        (($base-margin / 4)) !important; }
+    .mt--, %mt--  { margin-top:    (($base-margin / 4)) !important; }
+    .mr--, %mr--  { margin-right:  (($base-margin / 4)) !important; }
+    .mb--, %mb--  { margin-bottom: (($base-margin / 4)) !important; }
+    .ml--, %ml--  { margin-left:   (($base-margin / 4)) !important; }
+    .ms--, %ms--  { margin-top:    (($base-margin / 4)) !important; margin-bottom: (($base-margin / 4)) !important; }
+    .me--, %me--  { margin-right:  (($base-margin / 4)) !important; margin-left:   (($base-margin / 4)) !important; }
+}
+
+
+@if ($enable-margins--small == true) {
+
+    /**
+    * Small margins.
+    */
+    .m-,  %m-   { margin:        (($base-margin / 2)) !important; }
+    .mt-, %mt-  { margin-top:    (($base-margin / 2)) !important; }
+    .mr-, %mr-  { margin-right:  (($base-margin / 2)) !important; }
+    .mb-, %mb-  { margin-bottom: (($base-margin / 2)) !important; }
+    .ml-, %ml-  { margin-left:   (($base-margin / 2)) !important; }
+    .me-, %me-  { margin-top:    (($base-margin / 2)) !important; margin-bottom: (($base-margin / 2)) !important; }
+    .ms-, %ms-  { margin-right:  (($base-margin / 2)) !important; margin-left:   (($base-margin / 2)) !important; }
+
+}
+
+
+@if ($enable-margins--large == true) {
+
+    /**
+     * Large Margins.
+     */
+    .m_x,  %m_x   { margin:        (($base-margin * 2)) !important;  }
+    .mt_x, %mt_x  { margin-top:    (($base-margin * 2)) !important;  }
+    .mr_x, %mr_x  { margin-right:  (($base-margin * 2)) !important;  }
+    .mb_x, %mb_x  { margin-bottom: (($base-margin * 2)) !important;  }
+    .ml_x, %ml_x  { margin-left:   (($base-margin * 2)) !important;  }
+    .me_x, %me_x  { margin-top:    (($base-margin * 2)) !important; margin-bottom:  (($base-margin * 2)) !important; }
+    .ms_x, %ms_x  { margin-right:  (($base-margin * 2)) !important; margin-left:    (($base-margin * 2)) !important; }
+}
+
+
+@if ($enable-margins--huge == true) {
+
+    /**
+     * Huge Margins.
+     */
+    .m_xx,  %m_xx   { margin:        (($base-margin * 4)) !important;  }
+    .mt_xx, %mt_xx  { margin-top:    (($base-margin * 4)) !important;  }
+    .mr_xx, %mr_xx  { margin-right:  (($base-margin * 4)) !important;  }
+    .mb_xx, %mb_xx  { margin-bottom: (($base-margin * 4)) !important;  }
+    .ml_xx, %ml_xx  { margin-left:   (($base-margin * 4)) !important;  }
+    .ms_xx, %ms_xx  { margin-top:    (($base-margin * 4)) !important; margin-bottom: (($base-margin * 4)) !important; }
+    .me_xx, %me_xx  { margin-right:  (($base-margin * 4)) !important; margin-left:   (($base-margin * 4)) !important; }
+
+}
+
+
+@if ($enable-margins--none == true) {
+
+    /**
+     * Remove margins.
+     */
+    .m0,  %m0   { margin:        0 !important; }
+    .mt0, %mt0  { margin-top:    0 !important; }
+    .mr0, %mr0  { margin-right:  0 !important; }
+    .mb0, %mb0  { margin-bottom: 0 !important; }
+    .ml0, %ml0  { margin-left:   0 !important; }
+    .me0, %me0  { margin-top:    0 !important; margin-bottom: 0 !important; }
+    .ms0, %ms0  { margin-right:  0 !important; margin-left:   0 !important; }
+
+}
+
+
+
+
+
+@if ($enable-paddings == true) {
+
+    /**
+     * Add paddings.
+     */
+    .p,  %p   { padding:        $base-padding !important; }
+    .pt, %pt  { padding-top:    $base-padding !important; }
+    .pr, %pr  { padding-right:  $base-padding !important; }
+    .pb, %pb  { padding-bottom: $base-padding !important; }
+    .pl, %pl  { padding-left:   $base-padding !important; }
+    .pe, %pe  { padding-top:    $base-padding !important; padding-bottom: $base-padding !important; }
+    .ps, %ps  { padding-right:  $base-padding !important; padding-left:   $base-padding !important; }
+
+}
+
+@if ($enable-paddings--tiny == true) {
+
+	/**
+     * Tiny paddings.
+     */
+    .p--,  %p--   { padding:        (($base-padding / 4)) !important; }
+    .pt--, %pt--  { padding-top:    (($base-padding / 4)) !important; }
+    .pr--, %pr--  { padding-right:  (($base-padding / 4)) !important; }
+    .pb--, %pb--  { padding-bottom: (($base-padding / 4)) !important; }
+    .pl--, %pl--  { padding-left:   (($base-padding / 4)) !important; }
+    .pe--, %pe--  { padding-top:    (($base-padding / 4)) !important; padding-bottom: (($base-padding / 4)) !important; }
+    .ps--, %ps--  { padding-right:  (($base-padding / 4)) !important; padding-left:   (($base-padding / 4)) !important; }
+
+}
+
+@if ($enable-paddings--small == true) {
+
+    /**
+     * Small paddings.
+     */
+    .p-,  %p-   { padding:        (($base-padding / 2)) !important; }
+    .pt-, %pt-  { padding-top:    (($base-padding / 2)) !important; }
+    .pr-, %pr-  { padding-right:  (($base-padding / 2)) !important; }
+    .pb-, %pb-  { padding-bottom: (($base-padding / 2)) !important; }
+    .pl-, %pl-  { padding-left:   (($base-padding / 2)) !important; }
+    .pe-, %pe-  { padding-top:    (($base-padding / 2)) !important; padding-bottom: (($base-padding / 2)) !important; }
+    .ps-, %ps-  { padding-right:  (($base-padding / 2)) !important; padding-left:   (($base-padding / 2)) !important; }
+
+}
+
+@if ($enable-paddings--large == true) {
+
+    /**
+     * Large paddings.
+     */
+    .p_x,  %p_x   { padding:        (($base-padding * 2)) !important; }
+    .pt_x, %pt_x  { padding-top:    (($base-padding * 2)) !important; }
+    .pr_x, %pr_x  { padding-right:  (($base-padding * 2)) !important; }
+    .pb_x, %pb_x  { padding-bottom: (($base-padding * 2)) !important; }
+    .pl_x, %pl_x  { padding-left:   (($base-padding * 2)) !important; }
+    .pe_x, %pe_x  { padding-top:    (($base-padding * 2)) !important; padding-bottom: (($base-padding * 2)) !important; }
+    .ps_x, %ps_x  { padding-right:  (($base-padding * 2)) !important; padding-left:   (($base-padding * 2)) !important; }
+
+}
+
+@if ($enable-paddings--huge == true) {
+
+    /**
+     * Huge paddings.
+     */
+    .p_xx,  %p_xx   { padding:        (($base-padding * 4)) !important; }
+    .pt_xx, %pt_xx  { padding-top:    (($base-padding * 4)) !important; }
+    .pr_xx, %pr_xx  { padding-right:  (($base-padding * 4)) !important; }
+    .pb_xx, %pb_xx  { padding-bottom: (($base-padding * 4)) !important; }
+    .pl_xx, %pl_xx  { padding-left:   (($base-padding * 4)) !important; }
+    .pe_xx, %pe_xx  { padding-top:    (($base-padding * 4)) !important;  padding-bottom: (($base-padding * 4)) !important; }
+    .ps_xx, %ps_xx  { padding-right:  (($base-padding * 4)) !important; padding-left:   (($base-padding * 4)) !important; }
+
+}
+
+@if ($enable-paddings--none == true) {
+
+    /**
+     * Remove paddings.
+     */
+    .p0,   %p0   { padding:        0 !important; }
+    .pt0,  %pt0  { padding-top:    0 !important; }
+    .pr0,  %pr0  { padding-right:  0 !important; }
+    .pb0,  %pb0  { padding-bottom: 0 !important; }
+    .pl0,  %pl0  { padding-left:   0 !important; }
+    .pe0,  %pe0  { padding-top:    0 !important; padding-bottom: 0 !important; }
+    .ps0,  %ps0  { padding-right:  0 !important; padding-left:   0 !important; }
+
+}
+
+// scss-lint:enable SingleLinePerProperty SingleLinePerSelector SpaceBeforeBrace

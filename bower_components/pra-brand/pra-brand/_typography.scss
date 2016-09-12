@@ -1,0 +1,43 @@
+h1, h2, h3{
+  font-family: $font-family-serif;
+}
+h2.avenir-bold{
+    font-family: $font-family-sans-serif-bold;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #979797;
+  }
+
+h1, h2, h3, h4, h4 {
+    &.avenir{
+      letter-spacing: $headings-letter-spacing;
+    }
+
+    }
+h6{
+  line-height: (($line-height-base + .5));
+}
+h1{
+  font-family: 'Klinic-medium';
+}
+
+.klinic{
+  font-family: $Klinic-regular;
+  &.light{
+    font-family: $Klinic-light;
+  }
+  &.medium{
+    font-family: $Klinic-medium;
+  }
+  &.bold{
+    font-family: $Klinic-bold;
+  }
+}
+
+.avenir{
+  font-family: $Avenir-regular;
+  &.bold{
+    font-family: $Avenir-bold;
+  }
+}
