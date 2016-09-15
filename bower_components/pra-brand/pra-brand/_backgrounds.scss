@@ -6,11 +6,15 @@
 
 .poly{
   fill: #ace63c;
-  background: url(../assets/pattern.svg) no-repeat 100%;
+  background: url(../bower_components/pra-brand/assets/pattern.svg) no-repeat 100%;
   background-blend-mode: hard-light;
   // background-color: #EA1B75;
   color: #ffffff;
   padding: 80px;
+}
+
+.parallax{
+  background-attachment: fixed;
 }
 
 
