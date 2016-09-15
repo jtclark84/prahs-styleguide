@@ -1000,8 +1000,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url(twbs-font-path("bootstrap/glyphicons-halflings-regular.eot"));
+  src: url(twbs-font-path("bootstrap/glyphicons-halflings-regular.eot?#iefix")) format("embedded-opentype"), url(twbs-font-path("bootstrap/glyphicons-halflings-regular.woff")) format("woff"), url(twbs-font-path("bootstrap/glyphicons-halflings-regular.ttf")) format("truetype"), url(twbs-font-path("bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular")) format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -6155,10 +6155,13 @@ h1 {
 
 .poly {
   fill: #ace63c;
-  background: url(../assets/pattern.svg) no-repeat 100%;
+  background: url(../bower_components/pra-brand/assets/pattern.svg) no-repeat 100%;
   background-blend-mode: hard-light;
   color: #ffffff;
   padding: 80px; }
+
+.parallax {
+  background-attachment: fixed; }
 
 .dark {
   background-color: #232323; }
@@ -6193,39 +6196,39 @@ h1 {
 
 @font-face {
   font-family: 'Klinic-bold';
-  src: url("../assets/fonts/klinicslabbold-webfont.woff");
+  src: url("../bower_components/pra-brand/assets/fonts/klinicslabbold-webfont.woff");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/klinicslabbold-webfont.woff") format("embedded-opentype"), url("../assets/fonts/klinicslabbold-webfont.woff") format("woff"); }
+  src: url("../bower_components/pra-brand/assets/fonts/klinicslabbold-webfont.woff") format("embedded-opentype"), url("../bower_components/pra-brand/assets/fonts/klinicslabbold-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: 'Klinic-medium';
-  src: url("../assets/fonts/klinicslabmedium-webfont.woff");
+  src: url("../bower_components/pra-brand/assets/fonts/klinicslabmedium-webfont.woff");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/klinicslabmedium-webfont.woff") format("embedded-opentype"), url("../assets/fonts/klinicslabmedium-webfont.woff") format("woff"); }
+  src: url("../bower_components/pra-brand/assets/fonts/klinicslabmedium-webfont.woff") format("embedded-opentype"), url("../bower_components/pra-brand/assets/fonts/klinicslabmedium-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: 'Klinic-regular';
-  src: url("../assets/fonts/klinicslabbook-webfont.woff");
+  src: url("../bower_components/pra-brand/assets/fonts/klinicslabbook-webfont.woff");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/klinicslabbook-webfont.woff") format("embedded-opentype"), url("../assets/fonts/klinicslabbook-webfont.woff") format("woff"); }
+  src: url("../bower_components/pra-brand/assets/fonts/klinicslabbook-webfont.woff") format("embedded-opentype"), url("../bower_components/pra-brand/assets/fonts/klinicslabbook-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: 'Klinic-light';
-  src: url("../assets/fonts/klinicslablight-webfont.woff");
+  src: url("../bower_components/pra-brand/assets/fonts/klinicslablight-webfont.woff");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/klinicslablight-webfont.woff") format("embedded-opentype"), url("../assets/fonts/klinicslablight-webfont.woff") format("woff"); }
+  src: url("../bower_components/pra-brand/assets/fonts/klinicslablight-webfont.woff") format("embedded-opentype"), url("../bower_components/pra-brand/assets/fonts/klinicslablight-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: 'AvenirNext-Bold';
-  src: url("../assets/fonts/AvenirNext-Bold.woff");
+  src: url("../bower_components/pra-brand/assets/fonts/AvenirNext-Bold.woff");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/AvenirNext-Bold.woff") format("embedded-opentype"), url("../assets/fonts/AvenirNext-Bold.woff") format("woff"); }
+  src: url("../bower_components/pra-brand/assets/fonts/AvenirNext-Bold.woff") format("embedded-opentype"), url("../bower_components/pra-brand/assets/fonts/AvenirNext-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: 'AvenirNext-Regular';
-  src: url("../assets/fonts/AvenirNext-Regular.woff");
+  src: url("../bower_components/pra-brand/assets/fonts/AvenirNext-Regular.woff");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/AvenirNext-Regular.woff") format("embedded-opentype"), url("../assets/fonts/AvenirNext-Regular.woff") format("woff"); }
+  src: url("../bower_components/pra-brand/assets/fonts/AvenirNext-Regular.woff") format("embedded-opentype"), url("../bower_components/pra-brand/assets/fonts/AvenirNext-Regular.woff") format("woff"); }
 
 .navbar-inverse .badge {
   background-color: #fff;
